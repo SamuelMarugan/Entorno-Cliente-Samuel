@@ -54,8 +54,8 @@ mostrarObjeto(alumno);
 let alumno2 = Object.assign({}, alumno);
 
 // Podemos llamar a "structuredClone" para el objeto al completo o para el objeto stats
-alumno2 = structuredClone(alumno);
-//alumno2.stats = structuredClone(alumno.stats);
+//alumno2 = structuredClone(alumno);
+alumno2.stats = structuredClone(alumno.stats);
 
 // Mostramos el resultado por pantalla
 alumno2.stats.posts += 1;
@@ -64,4 +64,5 @@ output.innerHTML += "<br><br><b>Recorriendo el objeto original</b>:";
 mostrarObjeto(alumno);
 output.innerHTML += "<br><b>Ahora el objeto clonado</b>:";
 mostrarObjeto(alumno2);
+
 
